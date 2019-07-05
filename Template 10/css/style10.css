@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+}
+
+.container {
+	width: 1150px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	background-color: #fdfdfe;
+	opacity: 0.7;
+	padding: 20px 0;
+}
+
+#main {
+	background: url(../img/main.png) 0 0 no-repeat;
+	background-size: cover;	
+	height: 100vh;
+	position: relative;
+}
+
+#main div {
+	height: 100%;
+}
+
+#main a {
+	position: absolute;
+	z-index: 5;
+	left: 50%;
+	bottom: 3%;
+	color: white;
+	font-size: 30px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 24px;
+}
+
+nav a {
+	font: bold 14px 'Open Sans';
+	color: #797979;
+}
+
+nav a:hover {
+	color: #ff3251;
+	text-decoration: none;
+}
+
+button {
+	border: solid 1px #ff3251;
+	border-radius: 60px;
+	background-color: #f4f6f8;
+	padding: 10px 40px;
+	font: bold 10px 'Open Sans';
+	color: #ff3251;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+button:hover {
+	background-color: #ff3251;
+	color: white;
+}
+
+h1 {
+	width: 50%;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	position: relative;
+}
+
+h2 {
+	font: bold 20px 'Open Sans';
+	color: #ff3251;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+h3 {
+	font: bold 16px 'Open Sans';
+	color: #ff3251;
+	text-align: center;
+}
+
+p {
+	font-family: 'Open Sans';
+	font-weight: normal;
+	color: #626261;
+}
+
+#advantages, #catalog {
+	padding-top: 84px;
+	padding-bottom: 80px;
+}
+
+#advantages > div > div:last-child {
+	padding-top: 140px;
+}
+
+#advantages > div > div:last-child > div {
+	padding: 0 20px;
+}
+
+#advantages > div > div:first-child > div > p, #catalog > div > div:first-child > div > p{
+	text-align: center;
+	line-height: 2;
+	font-size: 16px;
+}
+
+#advantages > div > div:last-child > div > p{
+	text-align: center;
+	font-size: 13px;
+}
+
+.adv1:before {
+	content: '';
+	display: block;
+	height: 66px;
+	background-image: url(../img/profit1.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+.adv2:before {
+	content: '';
+	display: block;
+	height: 66px;
+	background-image: url(../img/profit2.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+.adv3:before {
+	content: '';
+	display: block;
+	height: 66px;
+	background-image: url(../img/profit3.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+.adv4:before {
+	content: '';
+	display: block;
+	height: 66px;
+	background-image: url(../img/profit4.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+.adv4 span {
+	font-weight: bold;
+	color: #00c7c0;
+}
+
+#catalog {
+	background: #f4f6f8;
+}
+
+#btns {
+	width: 100%;
+}
+
+#btns > div {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#watches {
+	margin-top: 70px;
+	margin-bottom: 68px;
+}
+
+figure {
+	margin-top: 10px;
+	border-radius: 10px;
+	background: white;
+	box-shadow: 10px 15px 10px 5px #ebedef;
+}
+
+figure img {
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	height: 185px;
+}
+
+figcaption {
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 140px;
+	text-align: center;
+	font: normal 11px 'Open Sans';
+	color: #3c3c3c;
+	text-transform: uppercase;
+	border-radius: 0 0 10px 10px;
+}
+
+figcaption span {
+	color: #ff3251;
+}
+
+
+footer {
+	position: relative;
+	width: 100%;
+}
+
+footer img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70%;
+	height: auto;
+	z-index: 1;
+	cursor: pointer;
+}
+
+footer div {
+	position: relative;
+	z-index: 2;
+	padding-top: 40px;
+}
+
+footer > div > h2 {
+	text-align: left;
+}
+
+footer > div > div {
+	margin-left:0;
+	padding-left: 0;
+}
+
+footer > div > div > p {
+	font: normal 14px 'OPen Sans';
+}
+
+h4 {
+	font: bold 14px 'OPen Sans';
+	color: black;
+}
+
+@media (max-width: 992px) {
+	.container {
+		width: 90%;
+	}
+	h1 {
+		width: 70%;
+	}
+
+	nav ul li {
+		padding-right: 10px;
+	}
+
+	figure img {
+		height: 140px;
+	}
+	figcaption {
+		padding: 20px 3px 50px;
+		border-radius: 0 0 8px 8px;
+	}
+	
+	footer img {
+		width: 57%;
+	}
+	footer div {
+		padding-top: 30px;
+	}
+}
+
+@media (max-width: 972px) {
+	footer img {
+		margin-top: 400px;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 80%;
+	}
+	#main {
+		height: 90vh;
+	}
+	nav {
+		display: none;
+	}
+
+	h1 {
+		width: 80%;
+	}
+	nav ul li {
+		padding-right: 5px;
+	}
+
+	figure img {
+		width: auto;
+		height: 140px;
+	}
+	figcaption {
+		padding: 10px 2px 40px;
+		border-radius: 0 0 8px 8px;
+	}
+
+	#advantages > div > div:last-child > div {
+		padding-bottom: 50px;
+	}
+
+}
+
+@media (max-width: 560px) {
+	h1 {
+		width: 90%;
+	}
+}
+
