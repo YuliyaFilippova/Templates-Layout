@@ -1,45 +1,55 @@
 .about {
-	display: flex;
-	justify-content: space-between;
-	padding-top:5%;
+	display: grid;
+	grid-template-rows: 1fr 10%;
+  	grid-template-columns: 1fr 40%;
+  	grid-gap: 5px;
+	grid-template-areas:
+	"about-statistic about-text"
+	"about-statistic about-button";
 }
 
-.statistic {
-	width: 55%;
-	display: flex;
- 	flex-wrap: wrap;
-  	align-items: flex-end;
+.about > div {
+	padding: 10px;
 }
 
-.statistic > div {
-	width: 50%;
-	display: inline-flex;
+#about-statistic { 
+	grid-area: about-statistic;
+	display: grid;
+	grid-template-rows: repeat(3 1fr);
+  	grid-template-columns: repeat(2 1fr);
+  	grid-gap: 5px;
+	grid-template-areas:
+	"statistic-item statistic-item"
+	"statistic-item statistic-item"
+	"statistic-item statistic-item";
+}
+
+#about-statistic > div {
+	display: flex;
+	justify-content: flex-end;
 	align-items: flex-end;
-	padding: 0 40px 40px 0;
+	padding: 0 3%;
 	font-size: 18px;
 	line-height: 24px;
 	color: #414141;
 }
 
-.statistic > div > span {
+#about-statistic > div > span {
 	font-size: 56px;
 	line-height: 36px; /* or 43% */
 	color: #DA241C;
 	margin-right: 10px;
 }
 
-.about-details {
-	width: 45%;
-	margin-left: 7%;
-	text-align: left;
-}
-
-.about-details > p, .botox-details > p {
-	padding-bottom: 50px;
+#about-text { 
+	grid-area: about-text;
+	padding-top: 10%;
 	font-size: 18px;
-	line-height: 24px;/* or 133% */
+	line-height: 24px;
 	color: #BBBBBB;
 }
+
+#about-button { grid-area: about-button;}
 
 .more-red {
 	border-color: #DA241C;

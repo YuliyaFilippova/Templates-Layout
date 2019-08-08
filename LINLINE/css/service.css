@@ -52,6 +52,13 @@ h3 {
 	color: #DA241C;
 }
 
+.botox-details > p {
+	padding-bottom: 50px;
+	font-size: 18px;
+	line-height: 24px;/* or 133% */
+	color: #BBBBBB;	
+}	
+
 .botox-details {
 	width: 60%;
 	margin-top: 7vh;
