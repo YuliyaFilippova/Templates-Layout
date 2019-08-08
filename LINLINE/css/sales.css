@@ -1,0 +1,93 @@
+.sales-slider {
+	margin: 40px auto;
+	position: relative;
+}
+
+.sales-slider .slick-dots {
+	bottom: -70px;
+}
+
+.sales-item figure {
+	height: 500px;
+	position: relative;
+	margin: 0 10px;
+	background-position: top 0 right 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.sales-item figure img {
+	width: 100%;
+	height: 360px;
+	margin-bottom: 30px;
+}
+
+.sales-item figure div {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height: 360px;
+	background-image: linear-gradient(0deg, rgba(218, 36, 28, 0.3), rgba(218, 36, 28, 0.3));
+	opacity: 0;
+	overflow: hidden;
+}
+
+.sales-item figure span{
+	position: absolute;
+	z-index: 11;
+	padding: 40px 0 0 40px;
+	font-size: 32px;
+	line-height: 16px;
+	color: #DA241C;
+	text-decoration: none;
+	opacity: 1;	
+}
+
+.sales-item figure figcaption {
+	position: absolute;
+	top: 380px;
+}
+
+h4 {
+	font-size: 32px;
+	line-height: 24px;
+	color: #414141;
+}
+
+h4:hover {
+	color: #DA241C;
+}
+
+.sales-item figure:hover div,
+ .sales-item figure:hover figcaption h4{
+	transition: 1s;
+	opacity: 1;
+	color: #DA241C;
+}
+
+.sales-item figure:hover span {
+	color: #fff;
+}
+
+.sales-item figcaption p {
+	margin-top: 15px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #414141;	
+}
+
+.more-pink {
+	margin: 0 auto;
+	border-color: #888888;
+	color: #888888;
+}
+
+.more-pink:hover {
+	background-color: #FF948F;
+	border-color: #FF948F;
+	color: #fefefd;
+}
+
+#sales .more-pink {
+	margin-top: 150px;
+}

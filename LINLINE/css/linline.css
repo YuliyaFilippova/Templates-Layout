@@ -1,0 +1,298 @@
+@font-face {
+	font-family: "ProximaNovaRegular";
+	src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+	src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+	url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "ProximaNovaBold";
+	src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+	src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+	url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #FEFEFD;
+	position: relative;
+}
+
+div, p, span, a, i, button, li, h1, h2, h3, h4, h5, h6 {
+	font-family: 'ProximaNovaRegular';
+	font-weight: normal;
+}
+
+button, a {
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+}
+
+button {
+	display: block;
+	padding: 8px 25px;
+	background: transparent;
+	border: solid 1px;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 19px;/* identical to box height */
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+header {
+	position: fixed;
+	z-index: 100;
+	background: white;
+	width: 100%;
+	height: 100px;
+	border-bottom: solid 1px #F5F5F5;
+}
+header .container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main {
+	padding-top: 100px;
+}
+
+header .container {
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+  	grid-template-columns: repeat(5, 1fr);
+  	grid-gap: 5px;
+	grid-template-areas:
+	"logo contacts contacts social signup"
+	"logo menu menu menu menu";
+}
+#logo { grid-area: logo;}
+#menu { grid-area: menu; }
+#contacts { grid-area: contacts; }
+#social { grid-area: social; justify-content: flex-end; }
+#signup { grid-area: signup; justify-content: flex-end; }
+
+.phone {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;/* identical to box height */
+	color: #414141;
+}
+
+.address {
+	font-size: 14px;
+	line-height: 17px;
+	color: #BBBBBB;
+}
+
+.socials, .socials-mob {
+	width: 180px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+.socials a i,
+ .socials-mob a i{
+	width: 26px;
+	height: 26px;
+	color: #FF948F;
+	margin: 0 3px;
+	text-align: center;
+}
+
+.socials a i:hover, 
+ .socials-mob a i:hover {
+	cursor: pointer;
+}
+
+
+.signup {
+	background-color: #DA241C;
+	border-color: #DA241C;
+	color: #FEFEFD;
+}
+
+.signup:hover {
+	background: transparent;
+	color: #DA241C;
+}
+
+
+section {
+	padding: 50px 0;
+}
+
+#items, #sales, #team, footer {
+	background-color: #F5F5F5;
+}
+
+#items {
+	display: flex;
+	height: 160px;
+}
+
+#items > div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0 60px;
+}
+
+#items > div > button {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 15%;
+	height: 128px;
+	border: solid 1px #DA241C;
+	border-radius: 15px;
+	background-color: #F5F5F5;
+	padding: 15px 15px 0;
+	font-weight: 600;
+	font-size: 16px;
+	color: #DA241C;
+}
+
+#items > div > button > p {
+	width: 100%;
+	height: 50%;
+	margin-bottom: 5px;
+}
+
+#items > div > button:hover {
+	background-color: #DA241C;
+	color: #FEFEFD;
+}
+
+.laser p { background: url(../img/service-buttons/laser.svg) center center no-repeat;}
+.laser:hover p { background-image: url(../img/service-buttons/laser_a.svg); }
+.barber p { background: url(../img/service-buttons/barber.svg) center center no-repeat;}
+.barber:hover p { background-image: url(../img/service-buttons/barber_a.svg); }
+.botox p { background: url(../img/service-buttons/botox.svg) center center no-repeat;}
+.botox:hover p { background-image: url(../img/service-buttons/botox_a.svg); }
+.one-hair p { background: url(../img/service-buttons/one-hair.svg) center center no-repeat;}
+.one-hair:hover p { background-image: url(../img/service-buttons/one-hair_a.svg); }
+.body-care p { background: url(../img/service-buttons/body-care.svg) center center no-repeat;}
+.body-care:hover p { background-image: url(../img/service-buttons/body-care_a.svg); }
+.veins p { background: url(../img/service-buttons/veins.svg) center center no-repeat;}
+.veins:hover p { background-image: url(../img/service-buttons/veins_a.svg); }
+
+.items-tablet {
+		display: none;
+	}
+
+h2 {
+	padding-bottom: 15px;
+	font-weight: normal;
+	font-size: 56px;
+	line-height: 68px; /* identical to box height */
+	color: #111111;
+}
+
+h2::after {
+	content: '';
+	display: inline-block;
+	width: 130px;
+	height: 0;
+	border: solid 1px #DA241C;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+.h2-description {
+	width: 35%;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px; /* or 120% */
+	color: #414141;
+}
+
+footer  {
+	height: 384px;
+	padding: 40px 0;
+	position: relative;
+}
+
+footer .container {
+	height: 100%;
+	display: grid;
+	grid-template-rows: 30% 1fr 20%;
+  	grid-template-columns: 270px 1fr 1fr 5%;
+  	grid-gap: 5px;
+	grid-template-areas:
+	"logo-footer links-footer button-footer arrowup-footer"
+	"contacts-footer links-footer button-footer arrowup-footer"
+	"socials-footer copyright copyright arrowup-footer";
+}
+
+footer .container > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo-footer { grid-area: logo-footer;}
+#contacts-footer { grid-area: contacts-footer; flex-direction: column; justify-content: space-around; }
+#socials-footer { grid-area: socials-footer; padding-left: 10px; border: solid 1px salmon; }
+#links-footer { grid-area: links-footer; }
+#button-footer { grid-area: button-footer; }
+#arrowup-footer { grid-area: arrowup-footer; }
+#copyright { 
+	grid-area: copyright;  
+	justify-content: space-between; 
+	font-size: 13px;
+	line-height: 16px;
+	color: #888888;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+.footer-desktop {
+	display: flex;
+}
+
+.footer-tablet, .footer-mob {
+	display: none;
+}
+
+.footer-links {
+	width: 70%;
+	display: flex;
+	align-items: center;
+}
+
+.footer-links > ul {
+	width: 100%;
+	list-style: none;
+	padding: 30px 0;
+	column-count: 2;
+}
+
+.footer-links > ul > li {
+	padding: 7px 3px;
+}
+
+
+
